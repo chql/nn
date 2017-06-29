@@ -1,0 +1,16 @@
+extends layout
+
+block css
+	link(rel='stylesheet',href='/css/slider.css')
+
+block javascript
+	script(type='text/javascript',src='/js/slider.js')
+	script(type='text/javascript',src='/js/noticias.js')
+
+block conteudo
+	include destaques
+	div.page-header
+		h3 Mais notícias
+	div#lista-noticias
+		include noticias
+		a(href=ajax_url,class="btn btn-primary btn-block btn-lg")#mais-noticias Mais notícias

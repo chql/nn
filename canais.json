@@ -1,0 +1,14 @@
+{
+	"principal": {
+		"nome": "Principal",
+		"url": "http://feeds.bbci.co.uk/portuguese/rss.xml"
+	},
+	"brasil": {
+		"nome": "Brasil",
+		"url": "http://feeds.bbci.co.uk/portuguese/brasil/rss.xml"
+	},
+	"internacional": {
+		"nome": "Internacional",
+		"url": "http://feeds.bbci.co.uk/portuguese/internacional/rss.xml"
+	}
+}

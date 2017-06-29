@@ -1,0 +1,8 @@
+div.center-block#slider
+	ul.slides
+		each n in destaques
+			li.slide
+				a(href=n.link[0],target='_blank')
+					img(alt=n.title[0],height='300',src=n['media:thumbnail'][0].$.url)
+	div.slide-text
+		h4= destaques[0].title[0]

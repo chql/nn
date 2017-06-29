@@ -1,0 +1,23 @@
+body {
+	background-image: url(/if.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#conteudo-container {
+    max-width: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+	padding-bottom: 20px;
+	background-color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+.conteudo-noticia {
+    padding-bottom: 10px;
+    border-bottom: solid 1px #EEEEEE;
+    margin-top: 10px;
+}
+

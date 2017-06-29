@@ -1,0 +1,38 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(name='viewport',content='width=device-width,initial-scale=1')
+		title NodeNews
+		link(rel='stylesheet',href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+		link(rel='stylesheet',href='/css/estilos.css')
+		link(rel='stylesheet',href='/css/menu.css')
+		block css
+		script(type='text/javascript',src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+		script(type='text/javascript',src='/js/relogio.js')
+		script(type='text/javascript',src='/js/menu.js')
+		script(type='text/javascript',src='/js/wallpaper.js')
+		block javascript
+	body
+		nav.navbar.navbar-default.navbar-static-top
+			div.container-fluid
+				div.navbar-header
+					a.navbar-brand(href='#')#brand NN
+				ul.nav.navbar-nav.navbar-right
+					li
+						a(href='#')#alterar-tema Tema
+					li
+						a(href='#')#fonte-maior A+
+					li
+						a(href='#')#fonte-menor A-
+				p.navbar-text.navbar-right#relogio
+				p.navbar-text.navbar-right#wallpaper
+		div.list-group#dropdown
+			each item in menu
+				a.list-group-item(href='/c/'+item.canal)= item.nome
+		div.container.center-block#conteudo-container
+			block conteudo
+			div#wallpaper
+				h3 Imagem do dia por 
+				a(target='_blank')
+					img.center-block(height='300')

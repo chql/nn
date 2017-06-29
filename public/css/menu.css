@@ -1,0 +1,15 @@
+#dropdown {
+    width: 200px;
+    position: absolute;
+    background-color: white;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+ul.menu {
+    list-style: none;
+}
+
+ul.menu li {
+    display: block;
+}
